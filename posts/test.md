@@ -14,5 +14,9 @@ date:   2019-01-27
 multilingual: flase
 ---
 
-## 0) 계기
+## 0) 계
 
+
+posts 옮기기 
+
+여기가 이슈에 등록을 
