@@ -21,4 +21,5 @@ Consider starting the commit message with an applicable emoji:
 - 🐛 `:bug:` : with `fix:` prefix.
     - when fixing a bug.
 - :memo: `:memo:` : with `docs:` prefix.
-    - when add document
+    - when add document 
+
