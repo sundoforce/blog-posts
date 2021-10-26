@@ -9,8 +9,8 @@ tags:
 -  gnuboard
 -  kubernetes
 -  k8s
-  date:   2021-05-01
-  multilingual: flase
+date:   2021-05-01
+multilingual: flase
 ---
 
 > 이글은 작성중 입니다.  
