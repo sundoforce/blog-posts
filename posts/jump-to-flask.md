@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[리뷰] 점프 투 플라스크"
-subtitle: "hello wasm"
+subtitle: "Python Clone Project"
 author: "sdk(muse kim)"
 catalog: true
 header-mask:  0.3
