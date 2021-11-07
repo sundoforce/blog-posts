@@ -99,11 +99,11 @@ Zoom 으로 진행 하는 것보다 자체 서버가 있으면 좋겠다고 생�
   
 ### 단순한 그림 
 ![https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png](https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png)
-* WebRTC는 Go에 적용하긴 러닝커브가 있었습니다. -> JavaScript 사용 하였습니다. 
+* WebRTC는 Go에 기능을 쓰려고 시도하다가 레퍼런스가 많은 JavaScript 사용 하였습니다. 
 * `Room`, `Ensemble` , `Toutor` 메뉴를 선택하면 uuid 같은 방 ID가 생성되고, 그것을 DB에 저장합니다. 
   * 구현은 mongoDB connection 정도와, 방이 생성되었을때 방 아이디를 GET으로 넘겨주는 것까지 했던것 같습니다 
 * 1:1 로 전화 걸로 받고 하는 것은 Youtube 20분짜리 영상을 보고 응용했습니다. 
-* 헤로쿠에 ws에 돌고 있다 
+* ws는 헤로쿠에 학생 무료 플랜 요금제로 돌아가고 있습니다. 
 
 
 
@@ -125,8 +125,8 @@ React.js에 대해서 기초가 없어서 새로 만들기 보단 `있는것을 
 Front-end 와 Back-end로 분리하기 위해서 평소 궁금했던 Go를 API로 활용하고 싶어서 시도했습니다. 
 ![https://user-images.githubusercontent.com/16316626/140649989-72ff4399-b16f-416d-bcaf-7c7003c28187.png](https://user-images.githubusercontent.com/16316626/140649989-72ff4399-b16f-416d-bcaf-7c7003c28187.png) 
   
-WebSocket의 예제는 JavaScript가 많이 있어서 그대로만 따라해도 구현이 됩니다.    
-Front에서 ws 프로토콜로 통신하고, 새로 생성한 방 ID를 저장하기 위해서 mongoDB를 시도했습니다.
+WebSocket 예제는 JavaScript 많이 있어서 그대로만 따라해도 구현이 됩니다.    
+Front 에서 ws 프로토콜로 통신하고, 새로 생성한 방 ID를 저장하기 위해서 mongoDB를 시도했습니다.
 
 
 ### WebRTC 구현 부분
