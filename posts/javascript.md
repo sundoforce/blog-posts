@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JavaScript 공부 시작"
+title:  "JavaScript Academy 시작 - gitbook"
 subtitle: "https://javascript.ac"
 author: "sdk(muse kim)"
 catalog: true
