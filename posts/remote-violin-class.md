@@ -116,8 +116,8 @@ Front-end 와 Back-end로 분리하기 위해서 평소 궁금했던 Go를 API�
 WebSocket의 예제는 JavaScript가 많이 있었다.  
 Front에서 ws주소와 백엔드 API를 호출한다.  
 
-* **Socket** 
-Socket 서버가 한대 필요해서 `heroku` 에서 소켓이 실행되고 있다. 
+* **Socket**     
+WebSocket 프로토콜 서버가 한대 필요해서 `heroku` 에서 실행중이다. 
 
 * **Back-End**
     * API: https://musia.io (도메인 확부)
