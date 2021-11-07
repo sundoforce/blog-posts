@@ -35,7 +35,7 @@ this, 객체, 타입, 스코프, 호이스팅 - 쭉 읽어보니 새로운 재�
 
 
 ### 2) Study Repository 생성
-[https://github.com/sundoforce/daily-life-javascript](https://github.com/sundoforce/daily-life-javascriptl)
+[https://github.com/sundoforce/daily-life-javascript](https://github.com/sundoforce/daily-life-javascript)
 
 일상자바스크립트
 
@@ -71,7 +71,7 @@ Front-end는 순수한 Javascript로 Back-end는 Java 언어를 사용하는 Spr
 그리고 새로운 우선순위인 토의프로젝트는
 Add-On은 [뮤즈 아카데미-https://muse.ac](https://muse.ac)이다.
 
-![screencapture-muse-ac-2021-11-07-01_11_47](https://user-images.githubusercontent.com/16316626/140616286-c0431b67-5625-488d-b97b-106540081318.png)
+![screencapture-muse-ac-2021-11-07-01_11_47](https://user-images.githubusercontent.com/16316626/140645777-51835ac9-e521-40fb-b076-5ab64cc2e68b.png)
 
 2021년 초에 만들다가 중단한 프로젝트이며, 이 관련된 것은 별도 포스팅 예정이다.
 
