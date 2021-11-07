@@ -15,8 +15,5 @@ multilingual: flase
 ---
 
 <div>
-  <video width=100% controls title="API 적용 결과 (서울)">
-    <source src="https://www.youtube.com/embed/POBUwZJXXFM">
-    [구현 비디오 링크](https://www.youtube.com/embed/POBUwZJXXFM)
-  </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/POBUwZJXXFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
