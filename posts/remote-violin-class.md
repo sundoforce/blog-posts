@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "[리뷰] 점프 투 플라스크"
-subtitle: "Python Clone Project"
-author: "sdk(muse kim)"
+title:  "Video Test"
+subtitle: "Youtube Embed"
+author: "sdk(sun-do, kim)"
 catalog: true
 header-mask:  0.3
 tags:
@@ -10,10 +10,9 @@ tags:
 - flask
 - review
 - book
-  date:   2021-03-01
-  multilingual: flase
+date: 2021-03-01
+multilingual: flase
 ---
-
 
 <div>
   <video width=100% controls title="API 적용 결과 (서울)">

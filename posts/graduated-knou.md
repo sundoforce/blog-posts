@@ -9,7 +9,7 @@ tags:
 -  방송통신대학교
 -  knou
 -  졸업
-date:   2021-04-21
+date: 2021-04-21
 multilingual: flase
 ---
 
