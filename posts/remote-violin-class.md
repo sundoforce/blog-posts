@@ -88,330 +88,331 @@ multilingual: flase
   ## 3) 오프라인 이후 온라인으로
   2022년 여름을 기약하며, 지금까지 아내와 제자는 매주 `Zoom` 수업을 진행하고 있습니다.
 
-# 4. 서비스구조 계획
-![https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png](https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png)
-## 4-1.Front-End
-### React
-최근에 사용해 보고 싶었던 `React.js`를 선택했습니다.   
-`리엑트를 다루는 기술 - 김민준 저`에 나온 소스코드를 타이핑한 결과물이 나온것이 있었습니다.     
-[https://react.qooo.io](https://react.qooo.io)
-이것을 그대로 사용했습니다.
+# 4. 서비스구조 계획  
+  ![https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png](https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png)
+  ## 4-1.Front-End
+  ### React
+  최근에 사용해 보고 싶었던 `React.js`를 선택했습니다.   
+  `리엑트를 다루는 기술 - 김민준 저`에 나온 소스코드를 타이핑한 결과물이 나온것이 있었습니다.     
+  [https://react.qooo.io](https://react.qooo.io)
+  이것을 그대로 사용했습니다.
 
-## 4-2.Back-End
-### Go + Fiber
-> [https://github.com/gofiber/fiber/blob/master/.github/README_ko.md](https://github.com/gofiber/fiber/blob/master/.github/README_ko.md)   
-> Fiber는 Express에서 영감을 받고, Go를 위한 가장 빠른 HTTP 엔진인 Fasthttp를 토대로 만들어진 웹 프레임워크 입니다.   
-> 비 메모리 할당과 성능을 고려한 빠른 개발을 위해 손쉽게 사용되도록 설계되었습니다.
+  ## 4-2.Back-End
+  ### Go + Fiber
+  > [https://github.com/gofiber/fiber/blob/master/.github/README_ko.md](https://github.com/gofiber/fiber/blob/master/.github/README_ko.md)   
+  > Fiber는 Express에서 영감을 받고, Go를 위한 가장 빠른 HTTP 엔진인 Fasthttp를 토대로 만들어진 웹 프레임워크 입니다.   
+  > 비 메모리 할당과 성능을 고려한 빠른 개발을 위해 손쉽게 사용되도록 설계되었습니다.
 
-Go 언어와, Fiber 프레임워크를 선택했습니다. Gin과 고민을 하였는데,   
-최근 활발히 한국어와 함께 업데이트되고 있는 문서를 보고 `Fiber`로 결정했습니다.
+  Go 언어와, Fiber 프레임워크를 선택했습니다. Gin과 고민을 하였는데,   
+  최근 활발히 한국어와 함께 업데이트되고 있는 문서를 보고 `Fiber`로 결정했습니다.
 
-## 4-3 Deploy
-![스크린샷 2021-11-08 오후 4 58 34](https://user-images.githubusercontent.com/16316626/140704664-ec23e3bd-952e-4a51-9b32-c4539674769a.png)    
-**구성**: [https://sdk.xyz/2020/04/05/install-kubernetes/](https://sdk.xyz/2020/04/05/install-kubernetes/)
-홈서버에 구동중인 Kubernetes 에 올려보려 합니다.  
-현재 Node 5개로 구성되어있습니다.
+  ## 4-3 Deploy
+  ![스크린샷 2021-11-08 오후 4 58 34](https://user-images.githubusercontent.com/16316626/140704664-ec23e3bd-952e-4a51-9b32-c4539674769a.png)    
+  **구성**: [https://sdk.xyz/2020/04/05/install-kubernetes/](https://sdk.xyz/2020/04/05/install-kubernetes/)
+  홈서버에 구동중인 Kubernetes 에 올려보려 합니다.  
+  현재 Node 5개로 구성되어있습니다.
 
-현재 홈서버에는 Go RestAPI만 docker로 실행중입니다.
+  현재 홈서버에는 Go RestAPI만 docker로 실행중입니다.
 
-> Go 실행 방법
-> 1. nohup
-> 2. Pm go [https://github.com/struCoder/pmgo](https://github.com/struCoder/pmgo)
-> 3. docker
-> 4. K8S
-> 5. go Air
+  > Go 실행 방법
+  > 1. nohup
+  > 2. Pm go [https://github.com/struCoder/pmgo](https://github.com/struCoder/pmgo)
+  > 3. docker
+  > 4. K8S
+  > 5. go Air
 
-* JWT 인증 : `go get -u github.com/form3tech-oss/jwt-go`
-* cors: `https://github.com/gofiber/fiber/blob/master/middleware/cors/README.md`
-* WASM(Web Assembly) 공부 시작 (현재 중단)
-> `C++`로 개발된 영상 채팅 프로그램을 Web에서 실행 하는 시도를 해보고 싶었음.  
->  한빛 출판사에서 `Web Assembly in action` 도서를 지원 받았습니다.
+  * JWT 인증 : `go get -u github.com/form3tech-oss/jwt-go`
+  * cors: `https://github.com/gofiber/fiber/blob/master/middleware/cors/README.md`
+  * WASM(Web Assembly) 공부 시작 (현재 중단)
+  > `C++`로 개발된 영상 채팅 프로그램을 Web에서 실행 하는 시도를 해보고 싶었음.  
+  >  한빛 출판사에서 `Web Assembly in action` 도서를 지원 받았습니다.
 
-## 4-4.기타
-### WebSocket
-최종적으로 사용한것은 `Node.js`으로 구현되어있는것을 그대로 받아 헤로쿠에 실행 중입니다.
-Go 언어일 경우 `Gorilla` (https://github.com/gorilla/websocket) 을 사용할 수 있었습니다.  
-인터넷 레퍼런스가 Go로 구현된것 보다 JavaScript 로 구현된 것이 훨씬 더 많았습니다.
+  ## 4-4.기타
+  ### WebSocket
+  최종적으로 사용한것은 `Node.js`으로 구현되어있는것을 그대로 받아 헤로쿠에 실행 중입니다.
+  Go 언어일 경우 `Gorilla` (https://github.com/gorilla/websocket) 을 사용할 수 있었습니다.  
+  인터넷 레퍼런스가 Go로 구현된것 보다 JavaScript 로 구현된 것이 훨씬 더 많았습니다.
 
 # 5.구현
 ![https://user-images.githubusercontent.com/16316626/140649989-72ff4399-b16f-416d-bcaf-7c7003c28187.png](https://user-images.githubusercontent.com/16316626/140649989-72ff4399-b16f-416d-bcaf-7c7003c28187.png)
-## 5-1. JavaScript
-많은 레퍼런스들이 인터넷에 존재했습니다.
-공개된 소스와 유튜브강좌를 보고 작동되는 소스코드를 활용했습니다.
 
-```aidl
-import React, { useEffect, useRef } from "react";
-import Header from "../common/Header";
+  ## 5-1. JavaScript
+  많은 레퍼런스들이 인터넷에 존재했습니다.
+  공개된 소스와 유튜브강좌를 보고 작동되는 소스코드를 활용했습니다.
 
-const Room = (props) => {
-    const userVideo = useRef();
-    const userStream = useRef();
-    const partnerVideo = useRef();
-    const peerRef = useRef();
-    const webSocketRef = useRef();
+  ```aidl
+  import React, { useEffect, useRef } from "react";
+  import Header from "../common/Header";
 
-    const openCamera = async () => {
-        const allDevices = await navigator.mediaDevices.enumerateDevices();
-        const cameras = allDevices.filter(
-            (device) => device.kind === "videoinput"
-        );
-        console.log(cameras);
+  const Room = (props) => {
+      const userVideo = useRef();
+      const userStream = useRef();
+      const partnerVideo = useRef();
+      const peerRef = useRef();
+      const webSocketRef = useRef();
 
-        const constraints = {
-            audio: true,
-            video: {
-                deviceId: cameras[1].deviceId,
-            },
-        };
+      const openCamera = async () => {
+          const allDevices = await navigator.mediaDevices.enumerateDevices();
+          const cameras = allDevices.filter(
+              (device) => device.kind === "videoinput"
+          );
+          console.log(cameras);
 
-        try {
-            return await navigator.mediaDevices.getUserMedia(constraints);
-        } catch (err) {
-            console.log(err);
-        }
-    };
+          const constraints = {
+              audio: true,
+              video: {
+                  deviceId: cameras[1].deviceId,
+              },
+          };
 
-    useEffect(() => {
-        openCamera().then((stream) => {
-            userVideo.current.srcObject = stream;
-            userStream.current = stream;
+          try {
+              return await navigator.mediaDevices.getUserMedia(constraints);
+          } catch (err) {
+              console.log(err);
+          }
+      };
 
-            webSocketRef.current = new WebSocket(
-                `ws://192.168.55.131:8000/join?roomID=${props.match.params.roomID}`
-            );
+      useEffect(() => {
+          openCamera().then((stream) => {
+              userVideo.current.srcObject = stream;
+              userStream.current = stream;
 
-            webSocketRef.current.addEventListener("open", () => {
-                webSocketRef.current.send(JSON.stringify({ join: true }));
-            });
+              webSocketRef.current = new WebSocket(
+                  `ws://192.168.55.131:8000/join?roomID=${props.match.params.roomID}`
+              );
 
-            webSocketRef.current.addEventListener("message", async (e) => {
-                const message = JSON.parse(e.data);
+              webSocketRef.current.addEventListener("open", () => {
+                  webSocketRef.current.send(JSON.stringify({ join: true }));
+              });
 
-                if (message.join) {
-                    callUser();
-                }
+              webSocketRef.current.addEventListener("message", async (e) => {
+                  const message = JSON.parse(e.data);
 
-				if (message.offer) {
-                    handleOffer(message.offer);
-                }
+                  if (message.join) {
+                      callUser();
+                  }
 
-                if (message.answer) {
-                    console.log("Receiving Answer");
-                    peerRef.current.setRemoteDescription(
-                        new RTCSessionDescription(message.answer)
-                    );
-                }
+                  if (message.offer) {
+                      handleOffer(message.offer);
+                  }
 
-                if (message.iceCandidate) {
-                    console.log("Receiving and Adding ICE Candidate");
-                    try {
-                        await peerRef.current.addIceCandidate(
-                            message.iceCandidate
-                        );
-                    } catch (err) {
-                        console.log("Error Receiving ICE Candidate", err);
-                    }
-                }
-            });
-        });
-    });
+                  if (message.answer) {
+                      console.log("Receiving Answer");
+                      peerRef.current.setRemoteDescription(
+                          new RTCSessionDescription(message.answer)
+                      );
+                  }
 
-    const handleOffer = async (offer) => {
-        console.log("Received Offer, Creating Answer");
-        peerRef.current = createPeer();
+                  if (message.iceCandidate) {
+                      console.log("Receiving and Adding ICE Candidate");
+                      try {
+                          await peerRef.current.addIceCandidate(
+                              message.iceCandidate
+                          );
+                      } catch (err) {
+                          console.log("Error Receiving ICE Candidate", err);
+                      }
+                  }
+              });
+          });
+      });
 
-        await peerRef.current.setRemoteDescription(
-            new RTCSessionDescription(offer)
-        );
+      const handleOffer = async (offer) => {
+          console.log("Received Offer, Creating Answer");
+          peerRef.current = createPeer();
 
-        userStream.current.getTracks().forEach((track) => {
-            peerRef.current.addTrack(track, userStream.current);
-        });
+          await peerRef.current.setRemoteDescription(
+              new RTCSessionDescription(offer)
+          );
 
-        const answer = await peerRef.current.createAnswer();
-        await peerRef.current.setLocalDescription(answer);
+          userStream.current.getTracks().forEach((track) => {
+              peerRef.current.addTrack(track, userStream.current);
+          });
 
-        webSocketRef.current.send(
-            JSON.stringify({ answer: peerRef.current.localDescription })
-        );
-    };
+          const answer = await peerRef.current.createAnswer();
+          await peerRef.current.setLocalDescription(answer);
 
-    const callUser = () => {
-        console.log("Calling Other User");
-        peerRef.current = createPeer();
+          webSocketRef.current.send(
+              JSON.stringify({ answer: peerRef.current.localDescription })
+          );
+      };
 
-        userStream.current.getTracks().forEach((track) => {
-            peerRef.current.addTrack(track, userStream.current);
-        });
-    };
+      const callUser = () => {
+          console.log("Calling Other User");
+          peerRef.current = createPeer();
 
-    const createPeer = () => {
-        console.log("Creating Peer Connection");
-        const peer = new RTCPeerConnection({
-            iceServers: [{ urls: "stun:stun.l.google.com:19302" }],
-        });
+          userStream.current.getTracks().forEach((track) => {
+              peerRef.current.addTrack(track, userStream.current);
+          });
+      };
 
-        peer.onnegotiationneeded = handleNegotiationNeeded;
-        peer.onicecandidate = handleIceCandidateEvent;
-        peer.ontrack = handleTrackEvent;
+      const createPeer = () => {
+          console.log("Creating Peer Connection");
+          const peer = new RTCPeerConnection({
+              iceServers: [{ urls: "stun:stun.l.google.com:19302" }],
+          });
 
-        return peer;
-    };
+          peer.onnegotiationneeded = handleNegotiationNeeded;
+          peer.onicecandidate = handleIceCandidateEvent;
+          peer.ontrack = handleTrackEvent;
 
-    const handleNegotiationNeeded = async () => {
-        console.log("Creating Offer");
+          return peer;
+      };
 
-        try {
-            const myOffer = await peerRef.current.createOffer();
-            await peerRef.current.setLocalDescription(myOffer);
+      const handleNegotiationNeeded = async () => {
+          console.log("Creating Offer");
 
-            webSocketRef.current.send(
-                JSON.stringify({ offer: peerRef.current.localDescription })
-            );
-        } catch (err) {}
-    };
+          try {
+              const myOffer = await peerRef.current.createOffer();
+              await peerRef.current.setLocalDescription(myOffer);
 
-    const handleIceCandidateEvent = (e) => {
-        console.log("Found Ice Candidate");
-        if (e.candidate) {
-            console.log(e.candidate);
-            webSocketRef.current.send(
-                JSON.stringify({ iceCandidate: e.candidate })
-            );
-        }
-    };
+              webSocketRef.current.send(
+                  JSON.stringify({ offer: peerRef.current.localDescription })
+              );
+          } catch (err) {}
+      };
 
-    const handleTrackEvent = (e) => {
-        console.log("Received Tracks");
-        partnerVideo.current.srcObject = e.streams[0];
-    };
+      const handleIceCandidateEvent = (e) => {
+          console.log("Found Ice Candidate");
+          if (e.candidate) {
+              console.log(e.candidate);
+              webSocketRef.current.send(
+                  JSON.stringify({ iceCandidate: e.candidate })
+              );
+          }
+      };
 
-    return (
+      const handleTrackEvent = (e) => {
+          console.log("Received Tracks");
+          partnerVideo.current.srcObject = e.streams[0];
+      };
 
-        <div>
-            <Header/>
-            <video autoPlay controls={true} ref={userVideo}></video>
-            <video autoPlay controls={true} ref={partnerVideo}></video>
-        </div>
-    );
-};
+      return (
 
-export default Room;
+          <div>
+              <Header/>
+              <video autoPlay controls={true} ref={userVideo}></video>
+              <video autoPlay controls={true} ref={partnerVideo}></video>
+          </div>
+      );
+  };
 
-```
-## 5-2. Go + Fiber
-RestFul API를 염두하고 코딩을 시작했습니다.  
-생성된 방의 정보를 MongoDB 에서 관리 하려고 생각했습니다.
-![https://user-images.githubusercontent.com/16316626/140649451-09db7049-eefa-4beb-a84f-b409646f8e12.png](https://user-images.githubusercontent.com/16316626/140649451-09db7049-eefa-4beb-a84f-b409646f8e12.png)  
-Fiber를 사용하면 controller / modules / routes / config 로 분리하고 구조적으로 설계가 가능해 보였습니다.
+  export default Room;
+
+  ```
+  ## 5-2. Go + Fiber
+  RestFul API를 염두하고 코딩을 시작했습니다.  
+  생성된 방의 정보를 MongoDB 에서 관리 하려고 생각했습니다.
+  ![https://user-images.githubusercontent.com/16316626/140649451-09db7049-eefa-4beb-a84f-b409646f8e12.png](https://user-images.githubusercontent.com/16316626/140649451-09db7049-eefa-4beb-a84f-b409646f8e12.png)  
+  Fiber를 사용하면 controller / modules / routes / config 로 분리하고 구조적으로 설계가 가능해 보였습니다.
 
 
-```aidl
-package controllers
+  ```aidl
+  package controllers
 
-import (
-	"encoding/json"
-	"github.com/gofiber/fiber/v2"
-	"github.com/gorilla/websocket"
-	//"github.com/valyala/fasthttp"
-	"log"
-	"net/http"
-)
+  import (
+      "encoding/json"
+      "github.com/gofiber/fiber/v2"
+      "github.com/gorilla/websocket"
+      //"github.com/valyala/fasthttp"
+      "log"
+      "net/http"
+  )
 
-// AllRooms is the global hashmap for the server
-var AllRooms RoomMap
+  // AllRooms is the global hashmap for the server
+  var AllRooms RoomMap
 
-// CreateRoomRequest Create a Room and return roomID
-func CreateRoomRequest(c *fiber.Ctx) error {
+  // CreateRoomRequest Create a Room and return roomID
+  func CreateRoomRequest(c *fiber.Ctx) error {
 
-	roomID := AllRooms.CreateRoom()
+      roomID := AllRooms.CreateRoom()
 
-	type resp struct {
-		RoomID string `json:"room_id"`
-	}
+      type resp struct {
+          RoomID string `json:"room_id"`
+      }
 
-	json.NewEncoder(c).Encode(resp{RoomID: roomID})
-	return c.Status(fiber.StatusOK).JSON(fiber.Map{
-		"success": true,
-		"data": fiber.Map{
-			"RoomID": roomID,
-		},
-	})
-}
+      json.NewEncoder(c).Encode(resp{RoomID: roomID})
+      return c.Status(fiber.StatusOK).JSON(fiber.Map{
+          "success": true,
+          "data": fiber.Map{
+              "RoomID": roomID,
+          },
+      })
+  }
 
-var upgrader = websocket.Upgrader{
-	CheckOrigin: func(r *http.Request) bool {
-		return true
-	},
-}
+  var upgrader = websocket.Upgrader{
+      CheckOrigin: func(r *http.Request) bool {
+          return true
+      },
+  }
 
-type broadcastMsg struct {
-	Message map[string]interface{}
-	RoomID  string
-	Client  *websocket.Conn
-}
+  type broadcastMsg struct {
+      Message map[string]interface{}
+      RoomID  string
+      Client  *websocket.Conn
+  }
 
-var broadcast = make(chan broadcastMsg)
+  var broadcast = make(chan broadcastMsg)
 
-func broadcaster() {
-	for {
-		msg := <-broadcast
+  func broadcaster() {
+      for {
+          msg := <-broadcast
 
-		for _, client := range AllRooms.Map[msg.RoomID] {
-			if client.Conn != msg.Client {
-				err := client.Conn.WriteJSON(msg.Message)
+          for _, client := range AllRooms.Map[msg.RoomID] {
+              if client.Conn != msg.Client {
+                  err := client.Conn.WriteJSON(msg.Message)
 
-				if err != nil {
-					log.Fatal(err)
-					client.Conn.Close()
-				}
-			}
-		}
-	}
-}
+                  if err != nil {
+                      log.Fatal(err)
+                      client.Conn.Close()
+                  }
+              }
+          }
+      }
+  }
 
-// https://github.com/gofiber/websocket
-// JoinRoomRequest will join the client in a particular room
+  // https://github.com/gofiber/websocket
+  // JoinRoomRequest will join the client in a particular room
 
-func JoinRoomRequest(c *fiber.Ctx) error {
+  func JoinRoomRequest(c *fiber.Ctx) error {
 
-	roomID := c.Params("roomID")
-	log.Print(roomID)
+      roomID := c.Params("roomID")
+      log.Print(roomID)
 
-	//roomID, ok := r.URL.Query()["roomID"]
+      //roomID, ok := r.URL.Query()["roomID"]
 
-	//if !ok {
-	//	log.Println("roomID missing in URL Parameters")
-	//	return
-	//}
-	//
-	//ws, err := upgrader.Upgrade(w, r, nil)
-	//if err !=  {
-	//	log.Fatal("Web Socket Upgrade Error", err)
-	//}
-	//
-	//AllRooms.InsertIntoRoom(roomID, false, ws)
+      //if !ok {
+      //	log.Println("roomID missing in URL Parameters")
+      //	return
+      //}
+      //
+      //ws, err := upgrader.Upgrade(w, r, nil)
+      //if err !=  {
+      //	log.Fatal("Web Socket Upgrade Error", err)
+      //}
+      //
+      //AllRooms.InsertIntoRoom(roomID, false, ws)
 
-	go broadcaster()
+      go broadcaster()
 
-	for {
-		var msg broadcastMsg
+      for {
+          var msg broadcastMsg
 
-		//err := ws.ReadJSON(&msg.Message)
-		//if err != nil {
-		//	log.Fatal("Read Error: ", err)
-		//}
-		//
-		//msg.Client = ws
-		msg.RoomID = roomID
+          //err := ws.ReadJSON(&msg.Message)
+          //if err != nil {
+          //	log.Fatal("Read Error: ", err)
+          //}
+          //
+          //msg.Client = ws
+          msg.RoomID = roomID
 
-		log.Println(msg.Message)
+          log.Println(msg.Message)
 
-		broadcast <- msg
-	}
-}
+          broadcast <- msg
+      }
+  }
 
-```
+  ```
 
 # 6.결과
 **뮤즈아카데미** : [https://muse.ac](https://muse.ac) 에 서비스? 중입니다.
