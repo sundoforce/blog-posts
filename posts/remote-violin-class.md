@@ -100,8 +100,8 @@ multilingual: flase
   ```
 
   ### 메뉴  
-  `Tutors`: 는  1:1 수업에 필요한 도구들을 제공 
-  `Ensemble`: `Create Room` 버튼을 누르면 방이 생성되고 대시보드가 나오는 것을 그리고 싶었습니다. 
+  `Tutors`: 는  1:1 수업에 필요한 도구들을 제공   
+  `Ensemble`: `Create Room` 버튼을 누르면 방이 생성되고 대시보드가 나오는 것을 그리고 싶었습니다.   
   `Commnity`: 커뮤니티 사이트로 이동합니다.  
   
 
@@ -111,7 +111,7 @@ multilingual: flase
   > Fiber는 Express에서 영감을 받고, Go를 위한 가장 빠른 HTTP 엔진인 Fasthttp를 토대로 만들어진 웹 프레임워크 입니다.   
   > 비 메모리 할당과 성능을 고려한 빠른 개발을 위해 손쉽게 사용되도록 설계되었습니다.
 
-  Go 언어와, Fiber 프레임워크를 선택했습니다. Gin과 고민을 하였는데,   
+  Go 언어와, Fiber 프레임워크를 선택했습니다. Gin과 고민을 하였는데,     
   최근 활발히 한국어와 함께 업데이트되고 있는 문서를 보고 `Fiber`로 결정했습니다.
 
   ## 4-3 Deploy
@@ -137,9 +137,9 @@ multilingual: flase
 
   ## 4-4.기타
   ### WebSocket
-  최종적으로 사용한것은 `Node.js`으로 구현되어있는것을 그대로 받아 헤로쿠에 실행 중입니다.
-  Go 언어일 경우 `Gorilla` (https://github.com/gorilla/websocket) 을 사용할 수 있었습니다.  
-  인터넷 레퍼런스가 Go로 구현된것 보다 JavaScript 로 구현된 것이 훨씬 더 많았습니다.
+  최종적으로 사용한것은 `Node.js`으로 구현되어있는것을 그대로 받아 헤로쿠에 실행 중입니다. 
+  Go 언어일 경우 `Gorilla` (https://github.com/gorilla/websocket) 을 사용할 수 있었습니다.    
+  인터넷 레퍼런스가 Go로 구현된것 보다 JavaScript 로 구현된 것이 훨씬 더 많았습니다.  
 
 # 5.구현
 ![https://user-images.githubusercontent.com/16316626/140649989-72ff4399-b16f-416d-bcaf-7c7003c28187.png](https://user-images.githubusercontent.com/16316626/140649989-72ff4399-b16f-416d-bcaf-7c7003c28187.png)
@@ -310,10 +310,12 @@ multilingual: flase
   ```
   ## 5-2. Go + Fiber
   RestFul API를 염두하고 코딩을 시작했습니다.  
-  생성된 방의 정보를 MongoDB 에서 관리 하려고 생각했습니다.
+  생성된 방의 정보를 MongoDB에서 관리 하려고 생각했습니다.  
+  
   ![https://user-images.githubusercontent.com/16316626/140649451-09db7049-eefa-4beb-a84f-b409646f8e12.png](https://user-images.githubusercontent.com/16316626/140649451-09db7049-eefa-4beb-a84f-b409646f8e12.png)  
-  Fiber를 사용하면 controller / modules / routes / config 로 분리하고 구조적으로 설계가 가능해 보였습니다.
-
+  Fiber를 사용하면 controller / modules / routes / config 로 분리하고 구조적으로 설계가 가능해 보였습니다.  
+  
+  
 
   ```aidl
   package controllers
