@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "(초안)비대면 강의를 위한 서버 구축기"
+title:  "비대면 강의를 위한 서버 구축기"
 subtitle: "언텍트 교육 프로그램"
 author: "sdk(sun-do, kim)"
 catalog: true
@@ -24,10 +24,6 @@ multilingual: flase
 </div>
 
 > 2021년 지란지교 패밀리데이의 `드림 미래 플랫폼` 주제에 아이디어 공모한 영상입니다.
->
-> 이 프로젝트를 위해서 생성한 MongoDB Cloud 사용료가 $461.3 결제(실제카드청구)되었습니다.  
-> 본선 진출시 상금이 있어서, 비용을 마련하고자 4시간 정도 시간을 들여 만든 영상입니다.  
-> MongoDB 에서 탕감 받았지만, 과금 과정과 용서?받은 내용은 별도 글을 작성 예정입니다.
 
 # 0.목차
 [1.발단](#1.발단)  
@@ -92,10 +88,22 @@ multilingual: flase
   ![https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png](https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png)
   ## 4-1.Front-End
   ### React
-  최근에 사용해 보고 싶었던 `React.js`를 선택했습니다.   
-  `리엑트를 다루는 기술 - 김민준 저`에 나온 소스코드를 타이핑한 결과물이 나온것이 있었습니다.     
-  [https://react.qooo.io](https://react.qooo.io)
-  이것을 그대로 사용했습니다.
+  최근에 사용해 보고 싶었던 `React.js`를 선택했습니다.    
+  디바이스 카메라권한을 받고, websocket 프로토콜을 이용해서 클라이언트들이 소켓서버에 접속해서   
+  영상과 음성을 주고 받는 방식 같습니다. (signaling(시그널링))  
+  
+  집 내부 망에서 테스트 할 때는 `Node.js`로 구현된것을 그대로 실행하면 소켓서버가 실행이되고 거기에 연결 해주는 작업을 해주었습니다.  
+  ```javascript
+    webSocketRef.current = new WebSocket(
+                `ws://192.168.55.131:8000/join?roomID=${props.match.params.roomID}`
+    );
+  ```
+
+  ### 메뉴  
+  `Tutors`: 는  1:1 수업에 필요한 도구들을 제공 
+  `Ensemble`: `Create Room` 버튼을 누르면 방이 생성되고 대시보드가 나오는 것을 그리고 싶었습니다. 
+  `Commnity`: 커뮤니티 사이트로 이동합니다.  
+  
 
   ## 4-2.Back-End
   ### Go + Fiber
