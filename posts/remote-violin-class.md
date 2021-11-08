@@ -23,145 +23,6 @@ multilingual: flase
     <iframe width="560" height="315" src="https://www.youtube.com/embed/POBUwZJXXFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-> 2021년 지란지교 패밀리데이의 `드림 미래 플랫폼` 주제에 아이디어 공모한 영상입니다. 
-> 
-> 이 프로젝트를 위해서 생성한 MongoDB Cloud 사용료가 $461.3 결제(실제카드청구)되었습니다.  
-> 본선 진출시 상금이 있어서, 비용을 마련하고자 4시간 정도 시간을 들여 만든 영상입니다.  
-> MongoDB 에서 탕감 받았지만, 과금 과정과 용서?받은 내용은 별도 글을 작성 예정입니다.
-
-# 1.발단
-코로나 시대를 맞아 아부다비에 살고 있는 지인의 자녀 초등학생의 모든 수업이 온라인으로 전환되었다는 소식을 들었습니다.  
-바이올린 수업도 온라인으로 시도하게 되었고, 좀더 좋은 선생님이 필요하다는 연락을 받게 되었습니다.
-
-한국에서 바이올린 선생인 아내와 5시간 시차가 있는 아부다비에서 학생이 온라인에서 처음 만나게 되었습니다.  
-
-`Zoom`을 이용하였지만 `WebRTC`를 이용해 직접 구현해 보고 싶었습니다.
-
-그 중간에 오픈소스인 `Jitsi`를 서버에 설치하였는데 서비스가 원활하지 않았습니다. 
-
-그래서 직접구현해 보고 싶은 마음이 생겼습니다.  
-
-온라인에서 `WebRTC Media Server`를 구현과 서비스를 하고 계신 분께 아래와 같은 키워드를 얻게 되었습니다.  
-`WebRTC`, `mediasoup`,  `Coturn`, `HLS`,  `DASH` 
-
-# 2.목표설정
-
-* 온라인에서 영상, 음성을 통한 비대면 렛슨이 가능한 서비스 
-* 자동 녹화기능 및 복습기능  
-* 예약된 시간에 자동으로 생성된 화상수업 ID와 링크로 생성 
-* 예습을 할 수 있게 미리 준비된 동영상 제공 
-
-# 3.진행과정 
-* 2020년 5월 6일: 첫 비대면 렛슨 시작
-* 2021년 7월 11일: 첫 만남
-* 2021년 7~8월: 한국에서 오프라인 3~4회 렛슨  
-* 2021년 8월 이후: 출국 부터 현재 (2021.11월) 온라인 수업은 진행 형
-
-    ## 1) 2020년 5월 6일  
-    ![https://user-images.githubusercontent.com/16316626/140648140-1a684caa-1d18-4238-99a9-3298c5ecd660.png](https://user-images.githubusercontent.com/16316626/140648140-1a684caa-1d18-4238-99a9-3298c5ecd660.png)
-    ### 이게 가능할까? (첫 비대면 음악 수업)
-    비디오 카메라, 컨덴서 마이크, 비디오 스위쳐, 42인치 TV, 방송용 조명등 많은 장비를 셋팅했습니다.
-    당분간은 학생 부모님과 저는 원활한 수업을 위해 수업 참관을 하면서 보조역할을 하기도 하였습니다. 
-
-    한동안 온라인 수업에 4명의 스케줄을 맞추어야 했는데
-    시간이 지나자 선생님과 학생이 편한 시간에 보면대에 아이패드를 거치하는 것으로 거창한 셋팅이 간소화 되었습니다.
-
-    ## 2) 2021년 7월 11일  
-    온라인으로만 매주 만났던 사제간의 만남이 실제 이루어졌습니다.
-    1년만에 초등학생이였던 아내 제자가 중학생이 되었습니다. 
-    전체적인 자세와 보잉을 직접 만나서 수업이 진행되니 온라인보다 오프라인이 훨씬 양쪽간의 만족도가 높았습니다.
-        
-    하지만, 저희는 온라인에서 비대면으로 계속 렛슨을 진행해야 합니다.
-    
-    ## 3) 오프라인 이후 온라인으로  
-    2022년 여름을 기약하며, 지금까지 아내와 제자는 매주 `Zoom` 수업을 진행하고 있습니다.   
-
-# 4. 서비스구조 계획
-![https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png](https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png)
-## 4-1.Front-End
-### React 
-최근에 사용해 보고 싶었던 `React.js`를 선택했습니다.   
-`리엑트를 다루는 기술 - 김민준 저`에 나온 소스코드를 타이핑한 적이 있었는데,   
-그 결과물인 MongoDB를 활용한 CRUD 게시판 홈페이지이 있었습니다.   
-[https://react.qooo.io](https://react.qooo.io)  
-
-## 4-2.Back-End
-### Go + Fiber 
-> [https://github.com/gofiber/fiber/blob/master/.github/README_ko.md](https://github.com/gofiber/fiber/blob/master/.github/README_ko.md)   
-> Fiber는 Express에서 영감을 받고, Go를 위한 가장 빠른 HTTP 엔진인 Fasthttp를 토대로 만들어진 웹 프레임워크 입니다.   
-> 비 메모리 할당과 성능을 고려한 빠른 개발을 위해 손쉽게 사용되도록 설계되었습니다.
-
-Go 언어와, Fiber 프레임워크를 선택했습니다. Gin과 고민을 하였는데,   
-최근 활발히 한국어와 함께 업데이트되고 있는 문서를 보고 `Fiber`로 결정했습니다.
-
-## 4-3 Deploy 
-![스크린샷 2021-11-08 오후 4 58 34](https://user-images.githubusercontent.com/16316626/140704664-ec23e3bd-952e-4a51-9b32-c4539674769a.png)  
-홈서버에 구동중인 Kubernetes 에 올려보려 합니다.  
-현재 Node 5개로 구성되어있습니다.  
-
-Web은 Vercel에서 구동중이고 
-현재 홈서버에는 Go RestAPI만 docker로 실행중입니다. 
-
-## 4-4.기타 
-### WebSocket 
-최종적으로 사용한것은 `Node.js`으로 구현되어있는것을 그대로 받아 헤로쿠에 실행 중입니다. 
-
-# 5.서비스구조설명
-
-# 6.구현 및 결과 
-
-# 7.문제점
-
-# 8.회고 
-
-# 9.앞으로의 계획 
-
-
-
-### 실행에 옮기자...
-* 뮤즈아카데미 : [https://muse.ac](https://muse.ac)
-`개발 임시 중단`  
-  (사이트는 살아 있습니다.) 
-
-**목표**
-* 프로토콜(WebRTC):  `화상, 음성 채팅`을 이용한 `1:1 렛슨`
-* `1:N 합주` 연습 
-* 콘서트 
-* 실시간 송출 및 녹화 
-
-**2021년 5월 무작정 개발에 들어갔습니다.**
-![https://user-images.githubusercontent.com/16316626/140645971-96ba3e1d-9b59-4e7e-8eec-579549db8823.png](https://user-images.githubusercontent.com/16316626/140645971-96ba3e1d-9b59-4e7e-8eec-579549db8823.png)
-![screencapture-muse-ac-2021-06-01-20_57_03 복사본](https://user-images.githubusercontent.com/16316626/140646254-0f20544f-2a90-4de4-ad42-da64e31ec012.png)
-
-### 홈서버 구성도 
-Zoom 으로 진행 하는 것보다 자체 서버가 있으면 좋겠다고 생각했습니다.    
-* 무작정 홈서버에 Kubernetes 설치 했습니다. [https://sdk.xyz/2020/04/05/install-kubernetes/](https://sdk.xyz/2020/04/05/install-kubernetes/)
-* 도메인 (https://muse.ac)을 확보 했습니다.
-* 메모장에 구상을 하기 시작했습니다.  
-* 관련된 기술들과 키워드를 조합으로 검색했습니다.
-* Jitsi (설치형 화상 회의 프로그램)을 서버에 설치했습니다.  
-  (설치기록: [https://sdk.xyz/2020/07/14/install-jitsi/](https://sdk.xyz/2020/07/14/install-jitsi/))
-  
-### 단순한 그림 
-* WebRTC는 Go에 기능을 쓰려고 시도하다가 레퍼런스가 많은 JavaScript 사용 하였습니다. 
-* `Room`, `Ensemble` , `Toutor` 메뉴를 선택하면 uuid 같은 방 ID가 생성되고, 그것을 DB에 저장합니다. 
-  * 구현은 mongoDB connection 정도와, 방이 생성되었을때 방 아이디를 GET으로 넘겨주는 것까지 했던것 같습니다 
-* 1:1 로 전화 걸로 받고 하는 것은 Youtube 20분짜리 영상을 보고 응용했습니다. 
-* ws는 헤로쿠에 학생 무료 플랜 요금제로 돌아가고 있습니다. 
-
-
-
-### 기술 스텍 
-* Front-End: `React.js`
-* Back-End: `Go` (Fiber Framework)
-* Web Socket: `Gorilla` (https://github.com/gorilla/websocket)
-* WebRTC 
-* MongoDB 
-
-#### **Front-End**   
-
-![x9791160508796](https://user-images.githubusercontent.com/16316626/140648843-a
-
 > 2021년 지란지교 패밀리데이의 `드림 미래 플랫폼` 주제에 아이디어 공모한 영상입니다.
 >
 > 이 프로젝트를 위해서 생성한 MongoDB Cloud 사용료가 $461.3 결제(실제카드청구)되었습니다.  
@@ -234,7 +95,7 @@ Zoom 으로 진행 하는 것보다 자체 서버가 있으면 좋겠다고 생�
 최근에 사용해 보고 싶었던 `React.js`를 선택했습니다.   
 `리엑트를 다루는 기술 - 김민준 저`에 나온 소스코드를 타이핑한 결과물이 나온것이 있었습니다.     
 [https://react.qooo.io](https://react.qooo.io)
-이것을 그대로 사용했습니다. 
+이것을 그대로 사용했습니다.
 
 ## 4-2.Back-End
 ### Go + Fiber
@@ -253,7 +114,7 @@ Go 언어와, Fiber 프레임워크를 선택했습니다. Gin과 고민을 하�
 
 현재 홈서버에는 Go RestAPI만 docker로 실행중입니다.
 
-> Go 실행 방법 
+> Go 실행 방법
 > 1. nohup
 > 2. Pm go [https://github.com/struCoder/pmgo](https://github.com/struCoder/pmgo)
 > 3. docker
@@ -270,13 +131,13 @@ Go 언어와, Fiber 프레임워크를 선택했습니다. Gin과 고민을 하�
 ### WebSocket
 최종적으로 사용한것은 `Node.js`으로 구현되어있는것을 그대로 받아 헤로쿠에 실행 중입니다.
 Go 언어일 경우 `Gorilla` (https://github.com/gorilla/websocket) 을 사용할 수 있었습니다.  
-인터넷 레퍼런스가 Go로 구현된것 보다 JavaScript 로 구현된 것이 훨씬 더 많았습니다. 
+인터넷 레퍼런스가 Go로 구현된것 보다 JavaScript 로 구현된 것이 훨씬 더 많았습니다.
 
-# 5.구현 
+# 5.구현
 ![https://user-images.githubusercontent.com/16316626/140649989-72ff4399-b16f-416d-bcaf-7c7003c28187.png](https://user-images.githubusercontent.com/16316626/140649989-72ff4399-b16f-416d-bcaf-7c7003c28187.png)
-## 5-1. JavaScript 
-많은 레퍼런스들이 인터넷에 존재했습니다. 
-공개된 소스와 유튜브강좌를 보고 작동되는 소스코드를 활용했습니다. 
+## 5-1. JavaScript
+많은 레퍼런스들이 인터넷에 존재했습니다.
+공개된 소스와 유튜브강좌를 보고 작동되는 소스코드를 활용했습니다.
 
 ```aidl
 import React, { useEffect, useRef } from "react";
@@ -438,7 +299,7 @@ const Room = (props) => {
 export default Room;
 
 ```
-## 5-2. Go + Fiber 
+## 5-2. Go + Fiber
 RestFul API를 염두하고 코딩을 시작했습니다.  
 생성된 방의 정보를 MongoDB 에서 관리 하려고 생각했습니다.
 ![https://user-images.githubusercontent.com/16316626/140649451-09db7049-eefa-4beb-a84f-b409646f8e12.png](https://user-images.githubusercontent.com/16316626/140649451-09db7049-eefa-4beb-a84f-b409646f8e12.png)  
@@ -553,12 +414,12 @@ func JoinRoomRequest(c *fiber.Ctx) error {
 ```
 
 # 6.결과
-**뮤즈아케데미** : [https://muse.ac](https://muse.ac) 에 서비스? 중입니다. 
+**뮤즈아케데미** : [https://muse.ac](https://muse.ac) 에 서비스? 중입니다.
 ![https://user-images.githubusercontent.com/16316626/140645971-96ba3e1d-9b59-4e7e-8eec-579549db8823.png](https://user-images.githubusercontent.com/16316626/140645971-96ba3e1d-9b59-4e7e-8eec-579549db8823.png)
 
-## Test 방법 
-1. Account Info 에 이름을 입력하고 COPY YOUR ID를 누르면 랜덤 아이디가 생성됩니다.  
-2. 다른 사람에게 랜덤아이디를 알려주면 `Make a call`로 요청을 할 수 있습니다. 
+## Test 방법
+1. Account Info 에 이름을 입력하고 COPY YOUR ID를 누르면 랜덤 아이디가 생성됩니다.
+2. 다른 사람에게 랜덤아이디를 알려주면 `Make a call`로 요청을 할 수 있습니다.
 
 ![screencapture-muse-ac-2021-06-01-20_57_03 복사본](https://user-images.githubusercontent.com/16316626/140646254-0f20544f-2a90-4de4-ad42-da64e31ec012.png)
 
@@ -567,14 +428,14 @@ func JoinRoomRequest(c *fiber.Ctx) error {
 * 아부다비에서는 한국에서 영상과 음성이 나오지 않았습니다
 * 서울과 대전에선 작동했으나, 물리적 거리 + 소리나 영상의 레이턴시가 너무 생기고 (동시에 불가) 소통 힘들었습니다.
 * WebSocket 프로토콜을 이미 개발된것을 이용 할 뿐이지, Low Level 또는 Core 단 개발은 꿈도 꾸지 못합니다.
-  ## 해결 방안 
-  * Web Assembly 로 이미 잘 짜여있는 C++ 프로그램을 포팅하는 방법이 있을 것입니다. 
-  * WebRTC 프로토콜을 잘 활용하는 방법이 있을 것입니다. 
-  * `Google Meet`, `Zoom`같은 상용서비스를 이용하는 방법이 있을 것입니다. 
+  ## 해결 방안
+  * Web Assembly 로 이미 잘 짜여있는 C++ 프로그램을 포팅하는 방법이 있을 것입니다.
+  * WebRTC 프로토콜을 잘 활용하는 방법이 있을 것입니다.
+  * `Google Meet`, `Zoom`같은 상용서비스를 이용하는 방법이 있을 것입니다.
 
 # 8.회고
 **한 것이 없다라고 생각했는데,,뭐라도 시도해본 흔적이 있어서...다행**
-머릿속으론 하고 싶은것이 있지만, 얼토 당토 않은 지식과 구현 자체가 안되는 프로젝트 였습니다. 
+머릿속으론 하고 싶은것이 있지만, 얼토 당토 않은 지식과 구현 자체가 안되는 프로젝트 였습니다.
 설령 기능을 만든다고 하더라도, 홈서버에서 실시간 영상처리 및 음성 서비스는 불가능 처럼 보였습니다.
 
 이 토이프로젝트는 `코로나 시대에 실제 진행되고 있는 아내의 수업`에서 모티브를 얻는       
@@ -586,11 +447,11 @@ func JoinRoomRequest(c *fiber.Ctx) error {
 지금도 진행하고 있는 렛슨은 남들이 하지 못한 특별한 수업입니다.
 
 지금도 아내의 수업은 진행되고 있으며,
-여러가지를 시도한 `뮤즈아카데미`는 실패하지 않았고 내가 알지 못하는 많은 것이 많다는 `배움`을 얻었습니다. 
+여러가지를 시도한 `뮤즈아카데미`는 실패하지 않았고 내가 알지 못하는 많은 것이 많다는 `배움`을 얻었습니다.
 
 # 9.앞으로의 계획
 
-Google MeetUp 혹을 Zoom 같은 완성도가 높은 것들을 활용하되 
+Google MeetUp 혹을 Zoom 같은 완성도가 높은 것들을 활용하되
 공개된 API가 있다면 이를 연동하고 멘토와 멘티를 중간에서 연결해주는 서비스가 가능할 것으로 생각됩니다.   
 사회적 약자 혹은 아동에게 교육의 기회를 제공해 줄수 있는 플랫폼을 만들고 싶습니다.
 
