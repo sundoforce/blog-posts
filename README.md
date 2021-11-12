@@ -1,5 +1,6 @@
-# Muse.kim`s Blog Posts
-![Vercel](https://vercelbadge.vercel.app/api/sundoforce/blog)
+# sdk`s Blog Posts
+![Vercel](https://vercelbadge.vercel.app/api/sundoforce/blog)  
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsundoforce%2Fblog)
 
 블로그 포스트만을 위한 저장소입니다.  
 

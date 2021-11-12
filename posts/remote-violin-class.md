@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "비대면 강의를 위한 서버 구축기"
+title:  "비대면 바이올린 강의를 위한 서비스 구축기"
 subtitle: "언텍트 교육 프로그램"
 author: "sdk(sun-do, kim)"
 catalog: true
@@ -15,6 +15,8 @@ tags:
 - coturn
 - HLS
 - DASH
+- violin
+- zoom
 
 date: 2021-11-07
 multilingual: flase
