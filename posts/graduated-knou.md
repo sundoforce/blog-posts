@@ -10,7 +10,7 @@ tags:
 -  knou
 -  졸업
 date: 2021-04-21
-multilingual: flase
+multilingual: false
 ---
 
 > 방송통신대학교 편입과 공부 졸업 후기를 남겨봅니다.  

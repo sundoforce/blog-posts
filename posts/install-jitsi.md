@@ -7,11 +7,11 @@ catalog: true
 header-mask:  0.3
 tags:
 - zoom
-- jitisi
+- Jitisi
 - webRTC
 - kubernetes
 date: 2020-07-14
-multilingual: flase
+multilingual: false
 ---
 
 

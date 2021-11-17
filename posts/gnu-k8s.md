@@ -10,7 +10,7 @@ tags:
 -  kubernetes
 -  k8s
 date: 2021-05-01
-multilingual: flase
+multilingual: false
 ---
 
 > 시도 해본 사항입니다.  

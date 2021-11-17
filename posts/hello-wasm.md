@@ -8,7 +8,7 @@ header-mask:  0.3
 tags:
 -  wasm
 date: 2021-05-28
-multilingual: flase
+multilingual: false
 ---
 
 # 나의 첫 WASM 기록
