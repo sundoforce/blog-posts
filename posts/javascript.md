@@ -10,7 +10,7 @@ tags:
 -  JS
 -  Academy
 date: 2021-11-06
-multilingual: flase
+multilingual: false
 ---
 
 ## 발단
