@@ -9,7 +9,7 @@ tags:
 - kubernetes
 - k8s
 date: 2020-04-05
-multilingual: flase
+multilingual: false
 ---
 
 
