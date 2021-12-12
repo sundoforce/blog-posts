@@ -8,8 +8,6 @@ header-mask:  0.3
 tags:
 - python
 - flask
-- review
-- book
 date: 2021-03-01
 multilingual: false
 ---

@@ -7,8 +7,6 @@ catalog: true
 header-mask:  0.3
 tags:
 -  JavaScript
--  JS
--  Academy
 date: 2021-11-06
 multilingual: false
 ---
