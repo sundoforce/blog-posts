@@ -6,8 +6,7 @@ author: "sdk(muse kim)"
 catalog: true
 header-mask:  0.3
 tags:
-- zoom
-- Jitisi
+- jitsi
 - webRTC
 - kubernetes
 date: 2020-07-14

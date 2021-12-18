@@ -6,9 +6,7 @@ author: "sdk(muse kim)"
 catalog: true
 header-mask:  0.3
 tags:
--  방송통신대학교
 -  knou
--  졸업
 date: 2021-04-21
 multilingual: false
 ---
