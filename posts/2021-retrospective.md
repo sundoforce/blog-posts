@@ -124,8 +124,8 @@ Javascript를 알고 싶어서 `https://javascript.ac` 자바스크립트 아카
 
 
 ### 관련 글
-👉  [https://javascript.ac](https://javascript.ac)  
-👉  [나의 첫 WASM 기록](https://sdk.xyz/2021/05/28/hello-wasm)  
+👉  [https://javascript.ac](https://javascript.ac)   
+👉  [나의 첫 WASM 기록](https://sdk.xyz/2021/05/28/hello-wasm)    
 👉  [리뷰-점프 투 플라스크](https://sdk.xyz/2021/03/01/jump-to-flask)
 
 
@@ -136,9 +136,9 @@ git submodule 을 사용해서 blog 와 post를 분리한 것이 마음에 들�
 워드프레스 블로그에서 이 블로그로 이주는 2022년 중 후순위로 미룰것입니다.
 
 ### 이전 블로그 및 도메인 정리
-👉  이력서 및 포트폴리오 : [https://sundo.kim](https://sundo.kim)
-👉  워드프레스 블로그 : [https://blog.sundo.kim](https://blog.sundo.kim)
-👉  새로운 블로그: [https://sdk.xyz](https://sdk.xyz)
+👉  이력서 및 포트폴리오 : [https://sundo.kim](https://sundo.kim)  
+👉  워드프레스 블로그 : [https://blog.sundo.kim](https://blog.sundo.kim)  
+👉  새로운 블로그: [https://sdk.xyz](https://sdk.xyz)  s
 
 
 # 6. 백엔드 개발에서 클라우드로 전환
