@@ -125,7 +125,7 @@ Javascript를 알고 싶어서 `https://javascript.ac` 자바스크립트 아카
 
 ### 관련 글
 👉  [https://javascript.ac](https://javascript.ac)  
-👉  [나의 첫 WASM 기록](https://sdk.xyz/2021/05/28/hello-wasm)
+👉  [나의 첫 WASM 기록](https://sdk.xyz/2021/05/28/hello-wasm)  
 👉  [리뷰-점프 투 플라스크](https://sdk.xyz/2021/03/01/jump-to-flask)
 
 
