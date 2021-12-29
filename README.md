@@ -1,6 +1,5 @@
 # sdk`s Blog Posts
-![Vercel](https://vercelbadge.vercel.app/api/sundoforce/blog)  
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsundoforce%2Fblog)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/70920cac-64c3-44fb-89ec-fb4978521bfc/deploy-status)](https://app.netlify.com/sites/vibrant-borg-871707/deploys)
 
 블로그 포스트만을 위한 저장소입니다.  
 
