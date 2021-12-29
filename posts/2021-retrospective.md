@@ -29,7 +29,7 @@ multilingual: false
 고객사의 요청에 따라 `Node.js`를 사용하다 회사에서의 주 언어 `Python`을 잠시 사용하다가
 `Java`로 언어를 정하고 익히려고 노력한 한 해였습니다. 
 
-`Node. js` -> `Python` -> `Java`로 바꾸면서
+`Node.js` -> `Python` -> `Java`로 바꾸면서
 Python으로 개발했던 것들을 `Spring Boot`으로 porting 개발을 하였습니다.
 
 * 공공 포털데이터 연계
