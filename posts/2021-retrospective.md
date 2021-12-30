@@ -164,7 +164,6 @@ git submodule 을 사용해서 blog와 post를 분리한 것이 마음에 들었
 워드프레스 블로그에서 이 블로그로 이주는 2022년 중 후순위로 미룰 것입니다.
 
 ### 이전 블로그 및 도메인 정리
-👉  이력서 및 포트폴리오 : [https://sundo.kim](https://sundo.kim)  
 👉  워드프레스 블로그 : [https://blog.sundo.kim](https://blog.sundo.kim)  
 👉  새로운 블로그: [https://sdk.xyz](https://sdk.xyz)  
 
