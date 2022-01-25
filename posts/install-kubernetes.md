@@ -15,7 +15,7 @@ multilingual: false
 
 ## 개요
 
-> `kubespray`로 `kubernetes(k8s)` 설치하기
+> `kubespray`로 `kubernetes(k8s)` 설치하기  
 > 최신 업데이트 :2021년 2월 14일
 
 - 목차
@@ -26,21 +26,21 @@ multilingual: false
 `kubespary`를 통해 설치 하면
 생각보다 쉽게 쿠버네티스가 설치가 된다.
 
-작년에 실습 삼아 쿠버네티스를 설치 했었다.
+작년에 실습 삼아 쿠버네티스를 설치 했었다.  
+
 AWS에 매달 5만원 넘게 내는 비용이 부담스러워
 홈서버에 쿠버네티스를 운영하기로 했다.
 2TB SSD를 추가 장착하고 사용할 node5개에 ubuntu를 설치했다.
 좀더 자원을 주고 싶었으나,
 
-회사일로 windows 개발환경이 필요해서 Windows에 자원을 많이 할당하고
-적절하게 분배하였다.
+windows server 자원을 제외한 나머지로 구성하였습니다.
 
 `2020.04.01`에 설치한 방법은 `inventory.ini`을 직접 수정 한 버전임.  
 [쿠버네티스설치\_이전버전](#쿠버네티스-설치2)
 
 `2021.2.14` 버전은
-아래의 주소의 README를 보고 설치
-~ https://github.com/kubernetes-sigs/kubespray`
+아래의 주소의 README 문서대로 설치하였습니다.
+[https://github.com/kubernetes-sigs/kubespray](https://github.com/kubernetes-sigs/kubespray)
 
 ## 서버구성
 
