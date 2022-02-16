@@ -73,7 +73,7 @@ App Store, Play Store에 배포까지 성공해보며,
 
 ### 연관 블로그 글
 👉  [비대면 바이올린 강의를 위한 서비스 구축기
-](https://sdk.xyz/2021/11/07/remote-violin-class)
+](https://sdk.xyz/remote-violin-class)
 
 
 # 3. 스터디와 강의 수강
@@ -83,7 +83,7 @@ App Store, Play Store에 배포까지 성공해보며,
 ## 3.1 방송통신대학교 졸업
 컴퓨터과학과 3학년 편입해서 2년 만에 `A0`로 졸업
 ### 연관 블로그 글
-👉  [[후기]방송통신대학교 컴퓨터과학과 편입에서 졸업까지](https://sdk.xyz/2021/04/21/graduated-knou)
+👉  [[후기]방송통신대학교 컴퓨터과학과 편입에서 졸업까지](https://sdk.xyz/graduated-knou)
 
 ## 3.2 프로그래머스 스터디 (완주)
 * 단순 CRUD는 그만! 웹 백엔드 시스템 구현(Spring Boot)
@@ -152,9 +152,9 @@ Javascript를 알고 싶어서 `https://javascript.ac` 자바스크립트 아카
 내용은 채우지 못했습니다.
 
 ### 관련 글
-👉  [https://javascript.ac](https://javascript.ac)   
-👉  [나의 첫 WASM 기록](https://sdk.xyz/2021/05/28/hello-wasm)    
-👉  [리뷰-점프 투 플라스크](https://sdk.xyz/2021/03/01/jump-to-flask)
+👉  [https://javascript.ac](https://javascript.sdk.xyz)   
+👉  [나의 첫 WASM 기록](https://sdk.xyz/hello-wasm)    
+👉  [리뷰-점프 투 플라스크](https://sdk.xyz/jump-to-flask)
 
 
 # 5. 블로그와 나
