@@ -427,7 +427,7 @@ multilingual: false
   ```
 
 # 6.결과
-**뮤즈아카데미** : [https://muse.ac](https://muse.ac) 에 서비스? 중입니다.
+**뮤즈아카데미** : [https://muse.sdk.xyz](https://muse.sdk.xyz) 에 서비스? 중입니다.
 ![https://user-images.githubusercontent.com/16316626/140645971-96ba3e1d-9b59-4e7e-8eec-579549db8823.png](https://user-images.githubusercontent.com/16316626/140645971-96ba3e1d-9b59-4e7e-8eec-579549db8823.png)
 
 ## Test 방법
