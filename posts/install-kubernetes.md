@@ -1,15 +1,11 @@
 ---
-layout: post
 title:  "kubernetes(k8s)설치 - kubespray"
 subtitle: "kubespray"
-author: "sdk(muse kim)"
-catalog: true
-header-mask:  0.3
 tags:
 - kubernetes
 - k8s
 date: 2020-04-05
-multilingual: false
+image: https://user-images.githubusercontent.com/34048253/138473541-ca9eef72-8d1f-4a24-8115-fe96b01f1eb0.png
 ---
 
 

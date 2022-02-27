@@ -1,16 +1,12 @@
 ---
-layout: post
 title:  "[k8s]jitsi 온라인 화상 프로그램 설치"
 subtitle: "온라인 화상 프로그램 서버 설치"
-author: "sdk(muse kim)"
-catalog: true
-header-mask:  0.3
 tags:
 - jitsi
 - webRTC
 - kubernetes
 date: 2020-07-14
-multilingual: false
+image: https://user-images.githubusercontent.com/34048253/138473541-ca9eef72-8d1f-4a24-8115-fe96b01f1eb0.png
 ---
 
 

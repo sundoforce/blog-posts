@@ -1,14 +1,10 @@
 ---
-layout: post
 title:  "나의 첫 WASM 기록"
 subtitle: "hello wasm"
-author: "sdk(muse kim)"
-catalog: true
-header-mask:  0.3
 tags:
 -  wasm
 date: 2021-05-28
-multilingual: false
+image: https://user-images.githubusercontent.com/34048253/138473541-ca9eef72-8d1f-4a24-8115-fe96b01f1eb0.png
 ---
 
 # 나의 첫 WASM 기록

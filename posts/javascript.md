@@ -1,14 +1,11 @@
 ---
-layout: post
 title:  "JavaScript Academy 시작 - gitbook"
 subtitle: "https://javascript.ac"
-author: "sdk(muse kim)"
-catalog: true
 header-mask:  0.3
 tags:
--  JavaScript
+- JavaScript
 date: 2021-11-06
-multilingual: false
+image: https://user-images.githubusercontent.com/16316626/140615299-228872a6-f091-4bfe-9588-93509e440d01.jpg
 ---
 
 ## 발단

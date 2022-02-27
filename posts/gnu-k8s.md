@@ -1,16 +1,12 @@
 ---
-layout: post
 title:  "그누보드 쿠버네티스 배포"
 subtitle: "docker, kubernetes"
-author: "sdk(muse kim)"
-catalog: true
-header-mask:  0.3
 tags:
--  gnuboard
--  kubernetes
--  k8s
+- gnuboard
+- kubernetes
+- k8s
 date: 2021-05-01
-multilingual: false
+image: https://user-images.githubusercontent.com/34048253/138473541-ca9eef72-8d1f-4a24-8115-fe96b01f1eb0.png
 ---
 
 > 시도 해본 사항입니다.  

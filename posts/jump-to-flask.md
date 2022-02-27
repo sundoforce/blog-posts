@@ -1,16 +1,14 @@
 ---
-layout: post
 title:  "[리뷰] 점프 투 플라스크"
 subtitle: "Python Clone Project"
-author: "sdk(muse kim)"
-catalog: true
-header-mask:  0.3
 tags:
 - python
 - flask
 date: 2021-03-01
-multilingual: false
+image: https://user-images.githubusercontent.com/16316626/138917025-ee2bdf8a-1eb9-4daf-8035-ece5c64d2e08.jpeg
 ---
+
+
 
 
 > `이지퍼블리싱` 출판사의 `출판사의 "점프 투 플라스크(박응용저)"`를 읽고 작성한 리뷰입니다.  
