@@ -14,25 +14,13 @@ tags:
 - violin
 - zoom
 date: 2021-11-07
-image: https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png](https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png
+image: https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png
 ---
 <div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/POBUwZJXXFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 > 2021년 지란지교 패밀리데이의 `드림 미래 플랫폼` 주제에 아이디어 공모한 영상입니다.
-
-# 0.목차
-[1.발단](#1.발단)  
-[2.목표설정](#2.목표설정)    
-[3.진행과정](#3.진행과정)  
-[4.서비스구조](#4.서비스구조)  
-[5.서비스구조설명](#5.서비스구조설명)  
-[6.구현](#6.구현)  
-[7.문제점](#7.문제점)  
-[8.회고](#8.회고)  
-[9.앞으로의 계획](#9.앞으로의-계획)
-
 
 # 1.발단
 코로나 시대를 맞아 아부다비에 살고 있는 지인의 자녀 초등학생의 모든 수업이 온라인으로 전환되었다는 소식을 들었습니다.  
