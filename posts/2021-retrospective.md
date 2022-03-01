@@ -4,7 +4,6 @@ subtitle: "2021년 회고"
 tags:
 - note
 date: 2021-12-28
-image: https://user-images.githubusercontent.com/34048253/138473541-ca9eef72-8d1f-4a24-8115-fe96b01f1eb0.png
 ---
 
 # 0. 2021 회고를 시작하며
