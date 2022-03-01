@@ -4,7 +4,7 @@ subtitle: "hello wasm"
 tags:
 -  wasm
 date: 2021-05-28
-image: https://user-images.githubusercontent.com/34048253/138473541-ca9eef72-8d1f-4a24-8115-fe96b01f1eb0.png
+image: https://user-images.githubusercontent.com/16316626/138916093-4355a666-83e7-4fd4-8ab1-f0cbd0303c08.png
 ---
 
 # 나의 첫 WASM 기록
