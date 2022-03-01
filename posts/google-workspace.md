@@ -1,5 +1,5 @@
 ---
-title:  "굿바이! 무료 버전G suite"
+title:  "굿바이! G-suite(무료)"
 subtitle: "google workspace"
 tags:
 - note
