@@ -88,7 +88,15 @@ https://drive.google.com/drive/quota
 ![image](https://user-images.githubusercontent.com/16316626/156091366-f3198733-5e11-4a88-abd2-2c2903c09870.png)
 ![image](https://user-images.githubusercontent.com/16316626/156091330-cb4818b9-ac9a-4ef1-aeae-d41952313495.png)
 
+### 메뉴얼 
 G workspace에 자세한 내용은 아래의 링크에서 확인 가능합니다.  
-
 https://support.google.com/a/answer/6365252?hl=ko
+
+24시간 연중 무휴 채팅 지원도 가능합니다. 
+
+
+### 콘텐츠를 공유드라이브로 이동하기 
+https://support.google.com/a/answer/7374057#zippy=
+
+
 
