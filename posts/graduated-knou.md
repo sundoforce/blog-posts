@@ -4,7 +4,6 @@ subtitle: "온라인 학위"
 tags:
 - knou
 date: 2021-04-21
-image: https://user-images.githubusercontent.com/34048253/138473541-ca9eef72-8d1f-4a24-8115-fe96b01f1eb0.png
 ---
 
 > 방송통신대학교 편입과 공부 졸업 후기를 남겨봅니다.  
