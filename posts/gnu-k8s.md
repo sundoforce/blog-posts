@@ -6,7 +6,6 @@ tags:
 - kubernetes
 - k8s
 date: 2021-05-01
-image: https://user-images.githubusercontent.com/34048253/138473541-ca9eef72-8d1f-4a24-8115-fe96b01f1eb0.png
 ---
 
 > 시도 해본 사항입니다.  
