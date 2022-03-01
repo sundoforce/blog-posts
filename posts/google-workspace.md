@@ -4,7 +4,7 @@ subtitle: "google workspace"
 tags:
 - note
 date: 2022-03-01
-image: https://user-images.githubusercontent.com/16316626/156091496-8e97d687-9ad7-44e2-9a70-9dddde863508.png
+image: https://user-images.githubusercontent.com/16316626/156100063-b358c556-2476-49e5-84f1-fc936854f72c.jpeg
 ---
 
 ### Gsuite 무료 종료 
