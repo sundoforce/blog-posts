@@ -4,8 +4,10 @@ subtitle: "https://javascript.ac"
 header-mask:  0.3
 tags:
 - JavaScript
+- js
 date: 2021-11-06
 image: https://user-images.githubusercontent.com/16316626/140615299-228872a6-f091-4bfe-9588-93509e440d01.jpg
+draft: false
 ---
 
 ## 발단

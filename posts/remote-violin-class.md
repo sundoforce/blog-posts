@@ -7,7 +7,7 @@ tags:
 - React
 - WebRTC
 - WebSocket
-- Mediasoup
+- Media-soup
 - coturn
 - HLS
 - DASH
@@ -15,6 +15,7 @@ tags:
 - zoom
 date: 2021-11-07
 image: https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png](https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png
+draft: false
 ---
 <div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/POBUwZJXXFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -26,7 +26,7 @@ image: https://user-images.githubusercontent.com/34048253/138473541-ca9eef72-8d1
 
 AWS에 매달 5만원 넘게 내는 비용이 부담스러워
 홈서버에 쿠버네티스를 운영하기로 했다.
-2TB SSD를 추가 장착하고 사용할 node5개에 ubuntu를 설치했다.
+2TB SSD를 추가 장착하고 사용할 node5개에 ubuntu 를  설치했다.
 좀더 자원을 주고 싶었으나,
 
 windows server 자원을 제외한 나머지로 구성하였습니다.
