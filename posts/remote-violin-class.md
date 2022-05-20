@@ -14,7 +14,7 @@ tags:
 - violin
 - zoom
 date: 2021-11-07
-image: https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png](https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png
+image: https://user-images.githubusercontent.com/16316626/140653960-16ff206c-bb15-4bf7-b328-0b8453508ae3.png
 draft: false
 ---
 <div>
