@@ -249,8 +249,10 @@ MASSIVE_SCALE_THRESHOLD Separate K8s master and ETCD if # of nodes >= 200
 
 ### 설치
 
-아래의 명령어를 입력하면
-`ansible-playbook -i inventory/mycluster/hosts.yml --become --become-user=root cluster.yml`
+아래의 명령어를 입력하면   
+```
+ansible-playbook -i inventory/mycluster/hosts.yml --become --become-user=root cluster.yml
+```
 
 깔끔히 설치 된다.
 `Ubuntu20.04버전은 에러 남`
