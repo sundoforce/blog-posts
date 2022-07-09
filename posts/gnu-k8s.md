@@ -20,9 +20,7 @@ draft: false
 이 글에서는 Ubuntu 18.04 LTS 운영체제에 k8s로 설명합니다.
 
 * `kubespray`로 `kubernetes`를 설치하시려면   
-  [https://qooo.io/cloud/install-kubernetes/](https://qooo.io/cloud/image-deploy-k8s/)로 이동하세요.
-* docker image로 k8s에 배포 하시려면   
-  [https://qooo.io/cloud/image-deploy-k8s/](https://qooo.io/cloud/image-deploy-k8s/)로 이동하세요.
+  [https://sdk.xyz/install-kubernetes](https://sdk.xyz/install-kubernetes)로 이동하세요.
 
 
 ## 순서
@@ -38,7 +36,7 @@ draft: false
     * ssl: cert-manager.io 사용
     * secret 생성
     * domain 연결
-    *
+
 
 #### TODO
 * DB(MariaBD) -> k8s (현재 다른 서버에 있음)
