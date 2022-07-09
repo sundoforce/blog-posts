@@ -269,7 +269,6 @@ gpg --edit-key [키 ID]
 3. 마지막에 질문하신 스샷같은 경우, 다음 플러그인을 받아서 설치하시면 이용하실 수 있습니다.
 
 https://chrome.google.com/webstore/detail/isometric-contributions/mjoedlfflcchnleknnceiplgaeoegien
-![Contributions](https://user-images.githubusercontent.com/16316626/178095304-a6edffb4-b237-43d1-9385-1ccead2478c6.jpg)
 
 https://user-images.githubusercontent.com/16316626/178095131-b47d112a-39b5-4767-9a5c-64e52172a31a.png
 커밋 개수가 저 그래프에 찍히는 기준은 다음 링크를 참고하시면 되겠습니다.
